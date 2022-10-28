@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {background-color: hsl(231.43,21.21%,12.94%);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+main {
+display:grid;
+grid-template-areas: 
+"A A B"
+"A A B"
+"C D D"
+"C E E"
+"C E E";
+gap: 10px;
+width: 40%;
+margin: auto;
+	
+}
+
+main div {
+    padding: 2em;
+    text-align: center;
+}
+
+.boxA { 
+  background-color: hsl(14.19,83.54%,52.35%);
+  grid-area: A;
+  padding: 4rem;  
+}
+.boxB { 
+  background-color: hsl(38.5,100%,50.2%);
+  grid-area: B;
+  padding: 2rem; 
+}
+.boxC { 
+  background-color: hsl(142.18,94.29%,34.31%);
+  grid-area: C;
+  padding: 5rem;  
+}
+.boxD { 
+  background-color: hsl(198.81,99.21%,49.8%);
+  grid-area: D;
+  padding: 1.5rem;  
+}
+.boxE {
+  background-color: hsl(198.81,99.21%,49.8%);
+  grid-area: E;
+  padding: 2rem;
+}
+a{color: white;
+ text-decoration: none;}      
+@media screen and (max-width:375px
+    body {background-color: hsl(231.43,21.21%,12.94%);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;}
+      }
+    </style>
+</head>
+<body>
+  <main>
+        <div class="boxA"></div>
+        <div class="boxB"></div>
+        <div class="boxC"></div>
+        <div class="boxD"></div>
+        <div class="boxE"></div>
+      <a href="index.html">Flexbox Layout</a>
+
+    </main>
+</body>
+</html>
